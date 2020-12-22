@@ -13,7 +13,7 @@ ASSETS_URL = f"{BASE_URL}/v2/assets"
 
 
 # endpoint for historical is different from our trading API
-HISTORICAL_URL = f"https://data.alpaca.markets/v1"
+HISTORICAL_URL = f"https://data.alpaca.markets"
 
 
 def get_account():
