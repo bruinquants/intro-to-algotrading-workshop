@@ -3,16 +3,16 @@
 ### What is JSON?
 JSON is an acronym for ```JavaScript Object Notation```
 -    A JavaScript "Object" is very similar to what we know in Python as "dictionaries"
---        **Note :** JavaScript Objects are also very similar to JavaScript maps, which would be considered the "true Python Dictionary equvialent"
- --       **Warning :** In JavaScript, an Object is a type of object, so a Javascript Object is essentially an "Object object" which can be confusing to many people. You don't have to understand the distinction for the purposes of this this course.
--    Much like Python dictionaries, there are "keys", which each have "values"
+        -  **Note :** JavaScript Objects are also very similar to JavaScript maps, which would be considered the "true Python Dictionary equvialent"
+       - **Warning :** In JavaScript, an Object is a type of object, so a Javascript Object is essentially an "Object object" which can be confusing to many people. You don't have to understand the distinction for the purposes of this this course.
+-   Much like Python dictionaries, there are "keys", which each have "values"
 -   The JSON file format provides an efficient way of transmiting data from once place to another.
     Ex. sending data from backend to frontend
 
 ### What is a Python dictionary?
 A Python dictionary is essentially a list of "keys" and "values"
 -    Every key is matched with a value.
---        **Note :** Keys cannot be mutable--only values can be. (ex a key cannot be a list, but a value can be a list.)
+        - **Note :** Keys cannot be mutable--only values can be. (ex a key cannot be a list, but a value can be a list.)
 -    Think of the keys as the words in a real dictionary, and the values the definition of the words.
     
 ### Example JSON File
@@ -39,9 +39,9 @@ Example of a JSON file :
 ### Combining Python and JSON
 Important Python libaries and modules for JSON :
 -    *requests* 
---        a library that allows you to request files from a server using HTTP (HyperText Transfer Protocol)
+        - a library that allows you to request files from a server using HTTP (HyperText Transfer Protocol)
 -    *json* 
---        a library that allows you to decode and interact with JSON files within a Python program.
+        - a library that allows you to decode and interact with JSON files within a Python program.
 
 ### Example Python code using JSON
 ```python3
