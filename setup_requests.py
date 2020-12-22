@@ -2,7 +2,7 @@ import requests
 import json
 from config import *
 
-# go to https://alpaca.markets/docs/api-documentation/api-v2 to see API documentation
+# go to https://alpaca.markets/docs/api-documentation/api-v2 to see API documentation.
 
 # trading API endpoints
 ACCOUNT_URL = f"{BASE_URL}/v2/account"
