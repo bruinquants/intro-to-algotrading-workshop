@@ -95,7 +95,7 @@ if __name__ == "__main__":
     pos = get_positions()
     print(pos)
     test = make_order("AAPL", 1, "buy", "market", "day", None)
-    # None is becuase we don't specify limit price for market order.  Limit price is a requirement to order
+    # None is because we don't specify limit price for market order.  Limit price is a requirement to order
     # at that price or better, whereas for a market order we'll take whatever we can get
 
 
