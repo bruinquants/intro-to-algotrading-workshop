@@ -8,6 +8,12 @@ place orders into a paper trading account, and test our algorithm using live mar
 You'll need to generate your API keys, which tells the server that we're allowed to use it.  Place the key and the 
 secret key in their respective places in the ```config.py``` file.
 
+You will probably find it easier to use conda for package management.
+
+Once that is set up, run ```pip install -r requirements.txt``` from the terminal in your conda environment to install
+all the packages.  
+
+
 ### API interface 
 
 The ```setup_requests.py``` file provides the basic interface to interact with our API.  We can get the information
@@ -18,10 +24,14 @@ If you have everything setup and running correctly you should be able to run the
 1 share of Apple now in your portfolio.  The order might not fill immediately if you place the order outside of market
 hours.
 
-This should be everything we
-
-### Websocket streaming for live data
+This should be everything we need right now.  
 
 ### Getting historical data
+
+Fetching historical data is slightly inconvenient in Alpaca since it operates on the older v1 API, so we lose some nice
+functionality from the requests module.  The functions ```get_historical_data``` and ```make_dataframe``` serve 
+all of our desires to get historical data, quickly benchmark ideas, and run basic backtests.  
+
+### Websocket streaming for live data
 
 ### Pairs Trading and Time Series Analysis
