@@ -1,5 +1,6 @@
 import requests
 import json
+import pandas as pd
 from config import *
 
 # go to https://alpaca.markets/docs/api-documentation/api-v2 to see API documentation.
@@ -74,13 +75,18 @@ def delete_position(symbol: str, qty=None):
     return json.loads(r.content)
 
 
-def get_historical_data(timeframe: str, symbols: str):
+def get_historical_data(timeframe: str, symbols: str, limit: int, start: str, end: str):
     # timeframe is our frequency, one of: minute, 1min, 5min, 15min, day, 1D
     # gets data for our symbols between start and end.  If we include multiple, separate by commas
+    # limit is the max number of instances we want to show in the response
 
-    url = f"{HISTORICAL_URL}/v1/bars/{timeframe}?symbols={symbols}"
+    url = f"{HISTORICAL_URL}/v1/bars/{timeframe}?symbols={symbols}&limit={limit}&start={start}&end={end}"
     r = requests.get(url=url, headers=HEADERS)
     return json.loads(r.content)
+
+
+def make_dataframe(json_data, asset):
+    return pd.DataFrame.from_dict(json_data[asset])
 
 
 if __name__ == "__main__":
@@ -96,7 +102,8 @@ if __name__ == "__main__":
     # visit https://app.alpaca.markets/paper/dashboard/overview to see your order
     print(test)
 
-    historical = get_historical_data("day", "AAPL")
+    historical = get_historical_data("day", "AAPL", 100, '2020-01-01', '2020-12-12')
     # schema for historical response is at
     # https://alpaca.markets/docs/api-documentation/api-v2/market-data/bars/#bars-entity
     print(historical)
+    print(make_dataframe(historical, "AAPL"))
