@@ -6,7 +6,7 @@ API is an acronym for `Application Programming Interface`.
         - APIs are most commonly associated with web-development, where an API can serve as an intermediary between frontend and backend code.
         - Most modern APIs adhere to HTTP and REST standards.
 -   Many software as a service (SaaS) services provide APIs that allow clients to connect their programs to the service's.
-        - (ex Twitter, Yahoo Finance, Skyscanner, Alpaca, etc.)
+       - (ex Twitter, Yahoo Finance, Skyscanner, Alpaca, etc.)
 
 ### What is HTTP?
 HTTP is an acronym for `HyperText Transfer Protocol`.
