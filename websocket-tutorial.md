@@ -17,7 +17,7 @@ Because real-time quote data is *extremely* important for algos, WebSockets APIs
 -   Less overhead also means more scalability which could be important later down the road.
 
 ### Combining Python and WebSockets
-Important Python libaries and modules for JSON :
+Important Python libaries and modules for WebSockets :
 -    **websocket**
         - a library that allows you to start a WebSocket connection.
 
