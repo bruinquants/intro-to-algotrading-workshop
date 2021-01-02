@@ -98,7 +98,6 @@ if __name__ == "__main__":
     # None is because we don't specify limit price for market order.  Limit price is a requirement to order
     # at that price or better, whereas for a market order we'll take whatever we can get
 
-
     # visit https://app.alpaca.markets/paper/dashboard/overview to see your order
     print(test)
 
