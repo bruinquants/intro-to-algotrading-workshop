@@ -36,7 +36,7 @@ CRUD is an acronym for `Create, Read, Update, Delete`.
     - GET : Read data
     - PUT : Update data 
     - DELETE : Delete data
--   These operations are important because they serve as the building blocks for communication between the requester and web resource.
+-   These operations are important because they serve as the building blocks for communication between the requester (client) and web resource (server).
 -   When making a request, you will use one of these verbs.
 
 
