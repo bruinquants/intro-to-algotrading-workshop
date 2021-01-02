@@ -6,9 +6,9 @@ A WebSocket is a persistent connection between a client and a server.
         -  The main difference between the two is that WebSockets are stateful protocols. REST is stateless.
         -  A server may send data to the client when data is updated with WebSockets--this is different from REST where the client must request the information via HTTP.
 -   Due to different protocols being used for WebSockets than for REST (HTTP), there is less overhead. Additionally, getting data from a server is no longer has to be a two-step process (Send a Request -> Wait for a Response)
-        -   For this reason, WebSockets are almost always more efficient performance-wise.
+       -   For this reason, WebSockets are almost always more efficient performance-wise.
 -   **Question :** If WebSockets have better performance and simplifies pulling data, why would we ever use REST?
-        -   The biggest reason is that HTTP requests are better supported throughout the web. More compatibility generally means easier integration.
+       -   The biggest reason is that HTTP requests are better supported throughout the web. More compatibility generally means easier integration.
 
 ### Why are WebSockets Important for Quant?
 Because real-time quote data is *extremely* important for algos, WebSockets APIs can offer a faster and more efficient method of data transfer.
