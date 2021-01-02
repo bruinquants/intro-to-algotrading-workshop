@@ -1,19 +1,29 @@
-# Mean and Standard Deviation Tutorial
+# WebSocket Tutorial
 
-### What is a Mean?
-Mean is another word for *average*.
--    The formula for the mean is the sum of a certain value of a dataset divided by the number of datapoints. 
-        -       Of course you are probably already familiar with this formula.
--    Like many other statistical quantities, the mean is very important when studying quantitative analysis.
+### What is a WebSocket?
+A WebSocket is a persistent connection between a client and a server.
+-    A WebSocket API has distinct differences from the RESTful APIs that we learned about earlier. 
+        -  The main difference between the two is that WebSockets are stateful protocols. REST is stateless.
+        -  A server may send data to the client when data is updated with WebSockets--this is different from REST where the client must request the information via HTTP.
+-   Due to different protocols being used for WebSockets than for REST (HTTP), there is less overhead. Additionally, getting data from a server is no longer has to be a two-step process (Send a Request -> Wait for a Response)
+        -   For this reason, WebSockets are almost always more efficient performance-wise.
+-   **Question :** If WebSockets have better performance and simplifies pulling data, why would we ever use REST?
+       -   The biggest reason is that HTTP requests are better supported throughout the web. More compatibility generally means easier integration.
 
-### What is a Standard Deviation?
-Standard deviation refers to the spread of a certain value of a dataset or more simply, it describes the average distance of a set of values from its mean.
--   The formula for standard deviation is the square root of the difference between the square of each value and the mean divided by the total number of datapoints.
-        -       You are probably also familiar with this formula.
--       The standard deviation is used extensively in statistics and quantitative analysis to estimate potential values and their likelihoods.
--   **Note :** Notice that standard deviation is directly dependent on the mean. This means that analyzing distributions and the spread of values in a dataset requires you to calculate a mean.
+### Why are WebSockets Important for Quant?
+Because real-time quote data is *extremely* important for algos, WebSockets APIs can offer a faster and more efficient method of data transfer.
+-   We could *technically* use a RESTful API to pull quote data in regular intervals, but this would be inefficent.
+       -   **Remember :** WebSockets are a *two-way street*. The web resource (server) can send data to the client and vice versa.
+-   Less overhead also means more scalability which could be important later down the road.
 
-### Why are we reviewing these basic statistics!?
-Though the mean and standard deviation are simple values that are useful when trying to have a basic understanding of a dataset, they are both important in the world of **stochastics**.
--       Stochastics is a field that studies probabilities that are randomly determined but can be estimated via statistical analysis or pattern recognition.
-        -       Because pattern recognition and statistical analysis includes analyzing distribution and its probabilities, both the mean and standard deviation are important values.
+### Combining Python and WebSockets
+Important Python libaries and modules for WebSockets :
+-    **websocket**
+        - a library that allows you to start a WebSocket connection.
+
+
+
+### Final Remarks
+WebSockets are not only useful, but almost ecessary when creating an algo.
+-   WebSocket APIs solve some of the pitfalls of REST APIs.
+-   In applications where streaming data is important, WebSockets are the way to go.
