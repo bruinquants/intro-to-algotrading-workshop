@@ -30,6 +30,19 @@ A Bid-Ask Spread is the range of prices others are willing to buy or sell a secu
 		   -   For stocks with low liquidity, the price you have to pay to buy a stock will be closer to the ask price and vice versa for when you want to sell a stock.
        -   The Bid-Ask Spread is especially important for quantitative analysts who use High Frequency Trading that utilize the Bid-Ask Spread.
        -   The "Market Makers" make money by utilizing the difference between the bid price and the ask price.
+    
+### Data Types
+Usually when we see quote data from exchanges, we get what is called **level 1 data**.  This basically means that we only see one set of
+bid-ask data.  
+- An example of level 1 quote data we might get from an exchange could look something like this:
+```{ticker: "AAPL", bid_price: 130, ask_price: 130.05, volume: 10}```.
+  
+This is contrasted with **level 2 data**, which gives the volumes at different bid and ask prices.  When people submit a limit buy order for a stock,
+there could be a range of prices within 30 cents.  In level 1 data we would only see the best possible buy and sell prices, which hides 
+the "market depth" at each time interval.
+
+In this course we'll only be dealing with level 1 data, but you should be aware that for any given tick the range of bids might extend 30 cents
+below the maximum bid price, and the range of asks could extend 30 cents above the minimum ask price.  
 
 ### What is Order Size?
 Order size refers to the number of securities an order calls to buy or sell.
