@@ -4,7 +4,7 @@
 A Financial Derivative is a financial instrument that is derived from some other security.
 -    In almost every case, owning a financial derivative gives you the right to purchase the underlying security at a certain price before a certain date.
         -  The most common forms of financial derivatives includes... :
-            -   Options Contracts (Calls, Puts, etc.)
+            -   Options Contracts (Calls, Puts, etc.).
             -   Index Futures (US 30 (DOW), US 100 (SPY), US Tech 100 (NQ), etc.).
             -   Commodity Futures (Gold Futures, Soybean Futures, Crude Oil Futures, etc.).
             -   Swaps (Credit Swaps, Interest Rate Swaps, etc.).
@@ -13,7 +13,7 @@ A Financial Derivative is a financial instrument that is derived from some other
 -   The vast majority of financial derivatives are managed and issued by Cboe Global Markets.
 -   Excluding options, the vast majority of financial dervatives are traded by institutions as a means to hedge equity positions or to profit via speculative trading.
 -   Derivatives often carry more risk than traditional equities because they are *leveraged*.
-       -    Leverage refers to the ability to control more securities than 
+       -    Leverage refers to the ability to control more securities than one paid for.
        -   **Note :** Many blame the lack of regulation in the derivatives market as the cause of the *2008 Financial Crisis* and following *Great Recession*. Derivatives should be used with extreme caution.
 
 ### What are Options Contract?
