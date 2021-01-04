@@ -24,13 +24,17 @@ If you have everything setup and running correctly you should be able to run the
 1 share of Apple now in your portfolio.  The order might not fill immediately if you place the order outside of market
 hours.
 
-This should be everything we need right now.  
-
 ### Getting historical data
 
 Fetching historical data is slightly inconvenient in Alpaca since it operates on the older v1 API, so we lose some nice
 functionality from the requests module.  The functions ```get_historical_data``` and ```make_dataframe``` serve 
-all of our desires to get historical data, quickly benchmark ideas, and run basic backtests.  
+all of our desires to get historical data, quickly benchmark ideas, and run basic backtests. 
+
+
+This should be everything we need right now
+
+Important note: make sure to remove your API keys from the ```config.py``` file before pushing.  You
+don't really want that stuff floating around on the internet.
 
 ### Websocket streaming for live data
 
