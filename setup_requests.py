@@ -13,7 +13,7 @@ ASSETS_URL = f"{BASE_URL}/v2/assets"
 
 
 # endpoint for historical is different from our trading API
-HISTORICAL_URL = "https://data.alpaca.markets"
+HISTORICAL_URL = f"https://data.alpaca.markets"
 
 
 def get_account():
@@ -86,8 +86,6 @@ def get_historical_data(timeframe: str, symbols: str, limit: int, start: str, en
 
 
 def make_dataframe(json_data, asset):
-    # if we have multiple stocks we want data for, we'll just pick 1 to make a dataframe since
-    # multi-indexing is prone to errors
     return pd.DataFrame.from_dict(json_data[asset])
 
 
