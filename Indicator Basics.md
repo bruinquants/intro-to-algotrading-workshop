@@ -5,8 +5,8 @@
 ### Motivation -- Why Indicators?
 
 - Standard metrics -- think open, high, low, close -- are like the speedometer of a car. They tell you exactly what you need to know at a baseline.
-- If we want to look deeper, we need more information. This is where, in a car, miles per gallon comes in. For stocks, the number of indicators used is almost absurd.
-- To start, let’s look at two of the most basic, and most powerful ones -- the Relative Strength Index and Simple Moving Averages.
+- If we want to look deeper, we need more information. This is where, in a car, something like miles per gallon comes in. For stocks, the number of indicators available is almost absurd.
+- To start, let’s look at three of the most basic, and most powerful ones -- the Relative Strength Index, Simple Moving Averages, and Volatility.
 
 ### Relative Strength Index
 > Measuring "Speed"
